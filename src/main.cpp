@@ -3,8 +3,9 @@
 #include "oneTimePad/oneTimePad.h"
 
 void performOneTimePadAndPrintResult(int message, int key) {
-	int cypherText = oneTimePadEncrypt(message, key);
-	int decryptedMessage = oneTimePadDecrypt(cypherText, key);
+	OneTimePad oneTimePad;
+	int cypherText = oneTimePad.encrypt(message, key);
+	int decryptedMessage = oneTimePad.decrypt(cypherText, key);
 	std::cout << message << ", " << key << " -> " << cypherText << " -> " << decryptedMessage << std::endl;
 }
 
