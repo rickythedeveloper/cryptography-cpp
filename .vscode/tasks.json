@@ -10,6 +10,7 @@
         "-g",
         "${workspaceFolder}/src/main.cpp",
         "${workspaceFolder}/src/helloWorld/helloWorld.cpp",
+        "${workspaceFolder}/src/oneTimePad/oneTimePad.cpp",
         "-o",
         "${workspaceFolder}/output"
       ],
