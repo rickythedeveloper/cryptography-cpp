@@ -1,3 +1,5 @@
 *.dSYM
 
 output
+
+.DS_Store
